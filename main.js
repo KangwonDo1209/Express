@@ -1,3 +1,17 @@
+var express = require("express");
+var app = express();
+var port = 3000;
+
+// route, routing
+app.get("/", function (req, res) {
+    return res.send("Hello World!");
+});
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}!`);
+});
+
+/*
 var http = require("http");
 var url = require("url");
 var topic = require("./lib/topic");
@@ -56,3 +70,4 @@ var app = http.createServer(function (request, response) {
     }
 });
 app.listen(3000);
+*/
